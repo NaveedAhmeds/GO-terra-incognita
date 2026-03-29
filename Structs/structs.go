@@ -44,6 +44,26 @@ myCar := struct{
 }
 
 
+//Auth practice to work on the structs with
+//-> example
+// -> getBasicAuth doesn't exist in this scope although we imahine it to be an authentiacatipon function returning some message after processing.
+//
+//
+	type authenticationInfo struct{
+	username string
+	password string
+}
+
+func (authI authenticationInfo) getBasicAuth() string{
+	fmt.Sprintf("
+		"Authorization: Basic %s:%s",
+			authI.username,
+			authI.passowrd,
+		")
+}
+
+
+
 func main() {
 	test(messageToSend{
 		message:     "Naveed",
