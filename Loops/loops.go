@@ -27,4 +27,24 @@ func main() {
 	// AND and OR operators
 	true || false // false
 	true && false // true
+
+	// Nested for loop
+
+}
+
+// Random function test
+func fors() {
+	isPrime := true
+
+	for i := 0; i*i < n+1; i++ {
+		if n%i == 0 {
+			isPrime = false
+			break
+		}
+
+		if !isPrime {
+			continue
+		}
+
+	}
 }
